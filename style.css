@@ -1,0 +1,112 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: black;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: darkred;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: rgb(180, 1, 1);
+    border-radius: 4px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    color: black;
+    margin-bottom: 15px;
+}
+p {
+    margin-bottom: 15px;
+}
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.fotos {
+    background-color: #000000;
+    border: 2px #000000;
+    padding: 40px;
+    text-align: center;
+    color: #000000;
+    margin: 20px 0;
+    border-radius: 6px;
+    font-style: italic;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: darkred;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+   
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background-color: darkred;
+        text-align: center;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    nav ul li {
+        border-bottom: 1px solid darkred;
+    }
+}
